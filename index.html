@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>SmileDental Solutions</title>
+<meta name="format-detection" content="telephone=no, address=no, email=no">
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="SmileDental Solutions partners with and acquires independent dental practices across Indiana. Doctor-owned, with an employee-ownership pathway.">
 <style>
@@ -166,6 +167,8 @@ td.us{background:color-mix(in srgb, var(--lav) 45%, transparent)}
 .card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:24px;display:grid;gap:16px;min-width:0}
 .card .lbl{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--band-muted)}
 .card .val{font-size:22px;font-weight:700;user-select:all}
+.card a.val, a[href^="tel"], a[x-apple-data-detectors]{color:inherit !important;text-decoration:none !important}
+.card a.val:hover{text-decoration:underline !important;text-underline-offset:4px}
 .card .addr{font-size:18px;line-height:1.4}
 .copy{justify-self:start;background:transparent;color:var(--band-ink);border:1.5px solid rgba(255,255,255,.5);border-radius:6px;padding:8px 14px;font:inherit;font-size:15px;cursor:pointer}
 .copy:hover{background:rgba(255,255,255,.08)}
@@ -383,7 +386,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
       <div class="card">
         <div>
           <div class="lbl">Phone</div>
-          <div class="val" id="phone">(219) 836-2910</div>
+          <a class="val" id="phone" href="tel:+12198362910" style="display:block">(219) 836-2910</a>
         </div>
         <button class="copy" type="button" id="copyPhone">Copy number</button>
         <div>
