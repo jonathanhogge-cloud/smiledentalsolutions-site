@@ -152,6 +152,20 @@ td.us{background:color-mix(in srgb, var(--lav) 45%, transparent)}
 @media (max-width:860px){.two{grid-template-columns:1fr}}
 @media (max-width:460px){.regions{grid-template-columns:1fr}}
 
+/* Careers */
+.careers{background:var(--lav)}
+.job{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:28px;display:grid;gap:22px;min-width:0}
+.job-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:baseline}
+.job-meta{display:flex;flex-wrap:wrap;gap:8px}
+.pill{font-size:13px;font-weight:700;letter-spacing:.04em;padding:5px 10px;border-radius:999px;background:var(--lav);color:var(--plum)}
+.job-cols{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.job-cols h4{margin:0 0 8px;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:var(--violet)}
+.job-cols ul{margin:0;padding-left:20px;display:grid;gap:5px}
+.job .pay{font-size:20px;font-weight:700;color:var(--plum)}
+.job .apply{border-top:1px solid var(--line);padding-top:18px;color:var(--muted)}
+.job .apply a{color:var(--plum);font-weight:700}
+@media (max-width:760px){.job-cols{grid-template-columns:1fr}}
+
 /* Founder */
 .founder{border-top:1px solid var(--line)}
 .founder .wrap{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:start}
@@ -194,6 +208,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
       <a href="#options">Options</a>
       <a href="#process">Process</a>
       <a href="#indiana">Indiana</a>
+      <a href="#careers">Careers</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -355,6 +370,47 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
         </div>
         <p class="lede" style="margin-top:14px;font-size:16px">Outside these areas? Call anyway. If the practice is in Indiana, we want to hear about it.</p>
       </div>
+    </div>
+  </section>
+
+  <section id="careers" class="careers">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Careers</p>
+        <h2>Practice dentistry with a path to ownership</h2>
+        <p class="lede">We're hiring associate dentists for practices across Indiana. You'll practice in an established office with a full schedule, and you'll be part of a group that dentists and staff own.</p>
+      </div>
+      <article class="job">
+        <div class="job-head">
+          <h3 style="font-size:24px">Associate Dentist</h3>
+          <div class="job-meta"><span class="pill">Indiana · multiple locations</span><span class="pill">Full-time or part-time</span></div>
+        </div>
+        <p class="pay">$700/day guaranteed minimum or 32–35% of collections, whichever is greater</p>
+        <div class="job-cols">
+          <div>
+            <h4>What we offer</h4>
+            <ul>
+              <li>No cap on earnings</li>
+              <li>Lab fees paid 100% by the practice</li>
+              <li>Dedicated dental assistant and operatories</li>
+              <li>401(k) with safe harbor match up to 6%</li>
+              <li>Continuing education and malpractice reimbursement</li>
+              <li>Credentialed in 300+ insurance networks, so you start with a full schedule</li>
+              <li>A path to ownership through our ESOP</li>
+            </ul>
+          </div>
+          <div>
+            <h4>What we're looking for</h4>
+            <ul>
+              <li>DDS or DMD with an active Indiana dental license, or in process</li>
+              <li>Indiana CSR and DEA registration, or eligible</li>
+              <li>New graduates welcome</li>
+              <li>Strong communication and treatment planning skills</li>
+            </ul>
+          </div>
+        </div>
+        <p class="apply">To apply, email your CV to <a href="mailto:recruiting@smiledentalsolutions.com">recruiting@smiledentalsolutions.com</a> or call or text (219) 207-6554.</p>
+      </article>
     </div>
   </section>
 
