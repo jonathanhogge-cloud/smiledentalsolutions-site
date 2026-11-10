@@ -374,7 +374,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
       <div class="sec-head" style="margin:0">
         <p class="eyebrow" style="color:var(--band-muted)">Confidential conversation</p>
         <h2>Thinking about what's next for your practice?</h2>
-        <p class="lede">Call us for a private, no-obligation conversation. There's no pressure and no broker fee to talk.</p>
+        <p class="lede">Call or text us for a private, no-obligation conversation. There's no pressure and no broker fee to talk.</p>
         <p class="lede" style="margin-top:12px">Helpful to have on hand, but not required for the first call:</p>
         <ul class="ready">
           <li>Approximate annual collections for the last 2–3 years</li>
@@ -386,7 +386,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
       <div class="card">
         <div>
           <div class="lbl">Phone</div>
-          <a class="val" id="phone" href="tel:+12198362910" style="display:block">(219) 836-2910</a>
+          <a class="val" id="phone" href="tel:+12192076554" style="display:block">(219) 207-6554</a>
         </div>
         <button class="copy" type="button" id="copyPhone">Copy number</button>
         <div>
@@ -411,7 +411,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 
 <script>
 document.getElementById('copyPhone').addEventListener('click', function(){
-  var btn = this, num = '(219) 836-2910';
+  var btn = this, num = '(219) 207-6554';
   function done(){ btn.textContent = 'Copied'; setTimeout(function(){ btn.textContent = 'Copy number'; }, 1800); }
   function fallback(){ var r = document.createRange(); r.selectNodeContents(document.getElementById('phone')); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Selected'; }
   try { navigator.clipboard.writeText(num).then(done, fallback); } catch(e){ fallback(); }
